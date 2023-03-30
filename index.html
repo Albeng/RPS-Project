@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Rock-paper-scissors Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <section class="scoreboard">
+        <div class="player-score">
+          <h1>Player</h1>
+          <p id="player-score-label">0</p>
+        </div>
+        <div class="tie-score-">
+          <h1>Ties</h1>
+          <p id="tie-score-label">0</p>
+        </div>
+        <div class="ai-score">
+          <h1>Computer</h1>
+          <p id="ai-score-label">0</p>
+        </div>
+      </section>
+
+      <section class="turns-container">
+        <div class="player-pick-container">
+          <h2 id="player-pick">#</h2>
+        </div>
+        <div class="ai-pick-container"></div>
+        <h2 id="computer-pick">#</h2>
+      </section>
+
+      <section class="weapons-container">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.game {
+  background-color: beige;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 5em;
+  text-align: center;
+}
+
+.scoreboard p {
+  font-size: 32px;
+  margin-top: 0.5em 0 1em 0;
+}
+
+.turns-container {
+  display: flex;
+  gap: 10em;
+}
+
+.turns-container h2 {
+    font-size: 60px;
+}
+
+.weapons-container button {
+    font-size: 25px;
+    background-color: transparent;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.weapons-container button:hover {
+    background-color: lavender;
+}
