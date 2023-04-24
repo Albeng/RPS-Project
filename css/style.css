@@ -46,3 +46,14 @@
 .weapons-container button:hover {
     background-color: lavender;
 }
+
+.reset-score button:hover {
+  background-color: red;
+}
+
+.reset-score button {
+  font-size: 25px;
+  background-color: transparent;
+  padding: 1em;
+  cursor: pointer;
+}

@@ -4,10 +4,11 @@ const computerScoreLabel = document.getElementById("ai-score-label");
 const playerPick = document.getElementById("player-pick");
 const computerPick = document.getElementById("computer-pick");
 const weaponsButton = document.querySelectorAll("button");
+const resetButton = document.getElementById("reset");
 
 let playerScore = 0;
-  let computerScore = 0;
-  let ties = 0;
+let computerScore = 0;
+let ties = 0;
 
 const getComputerSelection = () => {
   const weapons = ["rock", "paper", "scissors"];
@@ -35,7 +36,6 @@ const gameHandler = (playerSelection) => {
   playerPick.textContent = playerSelection;
 
   const result = playRound(playerSelection, computerSelection);
-  
 
   if (result === "You Win") {
     playerScore++;
@@ -49,6 +49,19 @@ const gameHandler = (playerSelection) => {
   }
 };
 
+const resetScore = () => {
+  playerScore = 0;
+  computerScore = 0;
+  ties = 0;
+  playerScoreLabel.textContent = "0";
+  computerScoreLabel.textContent = "0";
+  tieScoreLabel.textContent = "0";
+  playerPick.textContent = "-";
+  computerPick.textContent = "-";
+};
+
 weaponsButton.forEach((weaponButton) => {
-  weaponButton.addEventListener("click",() => gameHandler(weaponButton.id));
+  weaponButton.addEventListener("click", () => gameHandler(weaponButton.id));
 });
+
+resetButton.addEventListener("click", resetScore);
